@@ -11,8 +11,8 @@ class App extends Component {
         
         <TitleCard />
 
-        <Post />
-        <Post />
+        <Post title='This is shocking!' author='SlimJim223'/>
+        <Post title='I made this thing!' author='HughMungusSyzzurp'/>
 
       </div>
     );

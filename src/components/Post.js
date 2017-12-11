@@ -6,7 +6,7 @@ import {
   Content,
 } from 'reactbulma';
 
-const Post = () => (
+const Post = ({ title, author }) => (
   <Container>
     <Media>
       <Media.Left>
@@ -15,10 +15,10 @@ const Post = () => (
       <Media.Content>
         <Content>
           <p>
-            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+            <strong>{title}</strong>
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-                  </p>
+            <cite>{author}</cite> <small>31m</small>
+          </p>
         </Content>
       </Media.Content>
     </Media>
